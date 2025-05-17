@@ -1,0 +1,20 @@
+smart helmet using iot with key
+-------------------------
+
+* development and testing finished 
+
+*overall projects tell us about accident and alcohol and helmet detection
+
+* if he want to ride a bike he must wear the helmet and he must be a non alcoholic 
+
+* and if he get an accident while riding the bike should be off and msg should be done to respective clients or persons with Gsp (location)
+
+* all the data is uploaded to the cloud 
+
+* create their thingspeak id
+
+*helmet consists of adxl , mq3 and push button
+
+* bike consists of key, esp01 , gsm, gps, relay
+
+------------------------------------------

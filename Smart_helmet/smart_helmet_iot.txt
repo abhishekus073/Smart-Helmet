@@ -1,0 +1,76 @@
+components required 
+
+1)Arduino : quantity 2 (arduino1,arduino2)
+2)RF Transmitter
+3)RF Recevier 
+4)push button
+5)gsm
+6)gps
+7)ESP-01 module
+8)realy
+9)key
+10)motor
+11)MQ-3 alcohol sensor
+12)ADXL sensor
+13)voltage divider
+
+
+connection details:
+
+1)Transmitter part:
+
+  a)Adxl sensor	       : vcc of ADXL is connected to vcc(+ or 5v) of voltage divider.
+	  	 	 gnd of adxl is connected to gnd(- or 0v) of voltage divider.
+	  	 	 x,y,z axis or pins of Adxl is connected to analog pins of arduino as declared in code. 
+
+  b)MQ-3 Alcohol sensor: vcc of MQ-3 sensor is connected to vcc(+ or 5v) of voltage divider.
+			 gnd of MQ-3 sensor is connected to gnd(- or 0v) of voltage divider.
+		         A0 pin of MQ-3 is connected to the analog pin of arduino as declared in code.
+
+  c)push button        : vcc of push button is connected to vcc(+ or 5v) of voltage divider.
+		 	 gnd of push button is connected to gnd(- or 0v) of voltage divider.
+		 	 out pin or a pin of push button is connected to digital pin of arduino as declared in code.
+
+  d)RF Transmitter     : vcc of RF Transmitter is connected to vcc(+ or 5v) of voltage divider.
+			 gnd of RF Transmitter is connected to gnd(- or 0v) of voltage divider.
+			 D1,D2,D3 pins of RF Transmitter is connected to digital pins of arduino as declared in code.
+
+  e)Arduino1           : vcc or 5v of arduino board is connected to vcc(+ or 5v) of voltage divider.
+			 gnd of arduino board is connected to the gnd(- or 0v) of voltagr divider.
+			 connect USB port of arduino is connected to USB port of the computer.
+
+2)Receiver part:
+
+  a)RF Receiver	       : vcc of RF Receiver is connected to vcc(+ or 5v) of voltage divider.
+			 gnd of RF Receiver is connected to gnd(- or 0v) of voltage divider.
+			 D1,D2,D3 pins of RF Receiver is connected to digital pins of arduino as declared in code.
+
+  b)GSM		       : Supply is given to the GSM through a adapter.
+			 gnd of GSM module is connected to the gnd of Arduino board.
+			 RX pin of GSM module is connected to the TX pin of Arduino board.
+
+  c)ESP-01	       : vcc of Esp-01 module is connected to 3.3v pin of Arduino board.
+			 gnd of Esp-01 is connected to the gnd of Arduino board.
+			 RX pin of Esp-01 pin is connected to digitalpin of TX of arduino as declared in code.
+			 TX pin of Esp-01 pin is connected to digitalpin of RX of arduino as declared in code.
+
+  d)Relay	       : vcc of relay is connected to the vcc of Arduino board.
+			 gnd of relay is connected to rhe gnd of Arduino board.
+			 out pin of relay is connected to the digital pin of arduino as declared in code.
+			 com pin of relay is connected to vcc(5v) of Arduino board or vcc(+) of voltage of voltage divider.
+			 NO(Normally opened) pin of relay is connected to any one terminal of key.
+			
+  e)key		       : any one terminal of key is connected to NO(normally opened) pin of relay.
+			 other terminal of key is connected  to positive terminal of motor.
+
+  f)motor	       : positive terminal of motor is connected to other terminal of key.
+			 negative terminal of motor is connected to gnd of arduino board.
+
+  G)GPS module         : vcc of Gps module is connected to the vcc pin of Arduino board.
+			 gnd of Gps module is connected to the gnd pin of Arduino board.
+			 Tx pin of Gps module is connected to the Rx pin of Arduino board.
+
+  
+
+  
+    
